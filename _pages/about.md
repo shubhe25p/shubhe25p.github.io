@@ -18,6 +18,7 @@ My research endeavors have compelled me to think about the synergy between neuro
 
 I work as a Software Engineer at (Bharat Tech Labs, India)[https://bharattechlabs.com/] and I am selected as a Teaching Assistant at (Neuromatch Academy)[https://academy.neuromatch.io/] for their Deep Learning Summer School. 
 
-Feel free to get in touch for collaborating or for a chat!
-My email: shubh.pachchigar@{gmail.com} or spachchigar@{sfsu.edu}
+Feel free to get in touch for collaborating or for a chat! While I am not working, I mostly spend my time tweeting about Physics, Philosophy, History, Biology and Computer Networks.
+
+My email: shubhpachchigar{at}{gmail}{dot}{com} or spachchigar{at}{sfsu}{dot}{edu}
 

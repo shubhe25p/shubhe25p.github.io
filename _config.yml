@@ -85,7 +85,7 @@ author:
   bio              : "Graduate Student at SF State. Exploring the intersection of Neuroscience and AI"
   location         : "San Francisco, CA"
   employer         : 
-  pubmed           : ""
+  pubmed           : 
   googlescholar    : ""
   email            : "shubhpachchigar@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "shubh-pachchigar-5b3917150"
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
