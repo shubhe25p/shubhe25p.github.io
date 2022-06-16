@@ -7,8 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-
-{% include base_path %}
 * **National Brain Research Centre, India**
   * Position: Project Assistant
   * Duration: May 2021 - Present
