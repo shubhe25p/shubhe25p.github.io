@@ -7,44 +7,42 @@ author_profile: true
 
 {% include base_path %}
 
-* **National Brain Research Centre, India**
-  * Position: Project Assistant
-  * Duration: May 2021 - Present
-  * PI: [Dr. Nivethida Thirugnanasambandam](https://scholar.google.co.in/citations?user=eV-11KsAAAAJ&hl=en)
-  * Affiliation: [Human Motor Neurophysiology and Neuromodulation Lab ](http://www.nbrc.ac.in/newweb/research/groups/Nivethida)
-  * Links: [Website](http://www.nbrc.ac.in/newweb/research/groups/Nivethida), [Offer Letter](https://drive.google.com/file/d/16Cy53vJCgyzY8ki5ixBD9EJGksOvttax/view?usp=sharing)
+* **Bharat Tech Labs, India**
+  * Position: Full Stack Machine Learning Engineer
+  * Duration: September 2021 - July 2022
+  * Work Description:
+     * Project Lead for [Monitor](https://monitor.keytoz.com)
+        * A monitoring tool for HTTPS endpoints along with SIP(VoIP) registrations.
+            
+            * Initial responsibilties included extensive market research, scalable and performant backend architecture, user-friendly front-end design decisions. 
+            
+            * Inspired by the flexibility and potential of event-driven architectures, Monitor's loosely coupled backend consisted of a myriad of BullMQ-worker pairs each handling a single responsibility i.e Target Distribution, Axios calls, Incident Creation, Escalation Alerts and finally to Email workers. All of these could not have been possible without an efficient DB design which would also be helpful for system restoration in failure scenerios.
 
-* **Northeastern University, USA**
-  * Position: Research Assistant
-  * Duration: August 2020 - Present
-  * PI: [Dr. MiYoung Kwon](https://scholar.google.com/citations?user=TdeKEGYAAAAJ&hl=en)
-  * Affiliation: [The Laboratory of Low Vision and Brain Research](https://kwonlab.sites.northeastern.edu/), Department of Psychology
-  * Links: [Website](https://kwonlab.sites.northeastern.edu/), [Offer Letter](https://drive.google.com/file/d/1SGjyaA3Z_GSp_HrHO7djiwjivoKfV7a7/view?usp=sharing)  
+            * With the number of workers growing rapidly, I was also responsible for developing Github WorkFlows for these containerized workers which would allow automated build and deployment. Additionally, to adhere to best software design practices, docker image tags followed semantic versioning.
+
+            * Removed redundant code from all workers by building a base package. This package follows the (Factory Pattern)[https://en.wikipedia.org/wiki/Factory_method_pattern] for its advantages of extensibility. 
+
+            * Deployed Cassandra Multi-region cluster for high frequency of write requests which Postgres could not handle during a request spike. Additionally helped with setting up Stargate, a GraphQL API gateway for CassandraDB.
+
+            * Trained a Hidden Markov model to detect a spike in the number of jobs entering this system so it would be handled responsibily by Horizontal Pod Autoscaler(HPA). Detected spikes with an accuracy of 92.65%.
+      
+      * Successfuly upgraded a production Kubernetes cluster of (Dolphin)[https://dolphin.evs7.com/] with minimal downtime. 
+
+           * Created ClusterConfigs for eksctl, cluster roles for AWS-Lambda and cluster-admin.
+           * Wrote Dolphin deployment YML, set-up of HPA(Pod Scaling, Same Node) and Cluster Autoscaler(Pod Scaling across Nodes). 
+           * Created Network Load Balancer(NLB), managed Node Groups and modified CI/CD pipeline for this new setup.
+           * Utilized ConfigMaps and Persistent Storage for Prometheus to collect cluster-wide metrics. BlackBox Exporters were used to probe internal API endpoints. Prometheus was configured to automatically discover new pods through its service discovery functionality.
+
+  * Skills acquired: Kubernetes, Message Queues, Redis, Cassandra, VueJS, TypeScript, and GraphQL.
+  * Links: [Website](https://bharattechlabs.com/)
   
-* **Baylor College of Medicine & Upload AI, USA**
-  * Position: Machine Learning Engineer
-  * Duration: August 2020 - Feb 2021
-  * PIs: [Dr. Andreas Tolias](https://toliaslab.org/), [Dr. Xaq Pitkow](https://xaqlab.com/)
-  * Links: [Website](https://uploadai.com/)
-
-* **TCS Innovation Labs, Kolkata, India**
-  * Position: Research Assistant
-  * Duration: February 2020 - May 2020
-  * Mentors: [Dr. Arijit Mukherjee](https://scholar.google.co.in/citations?user=99_nlsMAAAAJ), [Sounak Dey](https://scholar.google.com/citations?user=s6EyYlUAAAAJ)
-  * Links: [Offer Letter](https://drive.google.com/file/d/1hqt1Gw1RxIOnqsai27yUflAYSR2JLvZM/view?usp=sharing), [Certificate](https://drive.google.com/file/d/167xIJLF2Z1JTwaj-0BITqFOTKpe1Nbvw/view?usp=sharing)
- 
-* **Centre national de la recherche scientifique (CNRS), France**
-  * Position: Research Intern (Undergraduate Thesis)
-  * Duration: August 2019 - December 2019
-  * Project Title: Considering DNA topology to investigate Transcription Factor Combinatorics
-  * Mentors: Dr. Charles-Henri Lecellier, Dr. Laurent Bréhélin, Dr. Sophie Lèbre
-  * Affiliations: [Institute of Molecular Genetics of Montpellier](http://www.igmm.cnrs.fr/) (IGMM), [Laboratory of Informatics, Robotics and Microelectronics of Montpellier](http://www.lirmm.fr) (LIRMM), [Montpellier Alexander Grothendieck Institute](http://imag.edu.umontpellier.fr/) (IMAG)
-  * Links: [Team Website](http://www.igmm.cnrs.fr/en/service/biogenese-micro-arns/), [Offer Letter](https://drive.google.com/file/d/1x9UTYSv2D6JTOMRVSK9_zYdxP0jlTvfD/view?usp=sharing), [Presentation](https://drive.google.com/file/d/1YMWKQA6bm2lW-alsdFLkqAM51jZPcnTF/view?usp=sharing), [Report](https://drive.google.com/open?id=1wyWnNp_XJCjfb0dSpBSMuvFjsmCERima)
-
-* **Google Summer of Code (GSoC) 2019**
-  * Position: Open Source Developer
-  * Duration: May 2019 - August 2019
-  * Project Title: Adding Magick back-end support and iruby integration to Rubyplot: An advanced plotting library for Ruby
-  * Mentoring Organisation: [The Ruby Science Foundation (SciRuby)](http://sciruby.com/)
-  * Mentors: [Sameer Deshmukh](https://github.com/v0dro), [Shekhar Prasad Rajak](https://github.com/Shekharrajak)
-  * Links: [Project](https://summerofcode.withgoogle.com/archive/2019/projects/6622714041729024/), [Proposal](https://github.com/alishdipani/rubyplot/wiki/GSoC-2019-Proposal), [Final Report](https://alishdipani.github.io/gsoc2019/2019/08/22/Wrapping-up-GSoC-2019/), [Github Repo](https://github.com/SciRuby/rubyplot), [Daily Updates](https://discourse.ruby-data.org/t/gsoc-2019-project-rubyplot-discussion/57) 
+* **Omni Automation, India**
+  * Position: Research Intern
+  * Duration: January 2021 - June 2021
+  * Work Description: 
+      * Measured electrical parameters of a railway yard in an isolated and a non-contact manner.
+      * Transmitted acquired data to a web server that logs and continuously accepts data via MQTT protocol.
+      * Built a web application that can display collected data in realtime as well as history(graphical) and exceptions  the same as per requests from the user.
+      * Took data from web application and trained a recurrent neural network model to predict various track circuit parameters.
+  * Skills acquired: MQTT, RNN, Web Socket and JS.
+  * Links: [Website](https://omniautomation.in/)
