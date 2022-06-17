@@ -14,19 +14,19 @@ author_profile: true
      * Project Lead for [Monitor](https://monitor.keytoz.com)
         * A monitoring tool for HTTPS endpoints along with SIP(VoIP) registrations.
             
-            * Initial responsibilties included extensive market research, scalable and performant backend architecture, user-friendly front-end design decisions. 
+          * Initial responsibilties included extensive market research, scalable and performant backend architecture, user-friendly front-end design decisions. 
             
-            * Inspired by the flexibility and potential of event-driven architectures, Monitor's loosely coupled backend consisted of a myriad of BullMQ-worker pairs each handling a single responsibility i.e Target Distribution, Axios calls, Incident Creation, Escalation Alerts and finally to Email workers. All of these could not have been possible without an efficient DB design which would also be helpful for system restoration in failure scenerios.
+          * Inspired by the flexibility and potential of event-driven architectures, Monitor's loosely coupled backend consisted of a myriad of BullMQ-worker pairs each handling a single responsibility i.e Target Distribution, Axios calls, Incident Creation, Escalation Alerts and finally to Email workers. All of these could not have been possible without an efficient DB design which would also be helpful for system restoration in failure scenerios.
 
-            * With the number of workers growing rapidly, I was also responsible for developing Github WorkFlows for these containerized workers which would allow automated build and deployment. Additionally, to adhere to best software design practices, docker image tags followed semantic versioning.
+          * With the number of workers growing rapidly, I was also responsible for developing Github WorkFlows for these containerized workers which would allow automated build and deployment. Additionally, to adhere to best software design practices, docker image tags followed semantic versioning.
 
-            * Removed redundant code from all workers by building a base package. This package follows the (Factory Pattern)[https://en.wikipedia.org/wiki/Factory_method_pattern] for its advantages of extensibility. 
+          * Removed redundant code from all workers by building a base package. This package follows the [Factory Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) for its advantages of extensibility. 
 
-            * Deployed Cassandra Multi-region cluster for high frequency of write requests which Postgres could not handle during a request spike. Additionally helped with setting up Stargate, a GraphQL API gateway for CassandraDB.
+          * Deployed Cassandra Multi-region cluster for high frequency of write requests which Postgres could not handle during a request spike. Additionally helped with setting up Stargate, a GraphQL API gateway for CassandraDB.
 
-            * Trained a Hidden Markov model to detect a spike in the number of jobs entering this system so it would be handled responsibily by Horizontal Pod Autoscaler(HPA). Detected spikes with an accuracy of 92.65%.
+          * Trained a Hidden Markov model to detect a spike in the number of jobs entering this system so it would be handled responsibily by Horizontal Pod Autoscaler(HPA). Detected spikes with an accuracy of 92.65%.
       
-      * Successfuly upgraded a production Kubernetes cluster of (Dolphin)[https://dolphin.evs7.com/] with minimal downtime. 
+      * Successfuly upgraded a production Kubernetes cluster of [Dolphin](https://dolphin.evs7.com/) with minimal downtime. 
 
            * Created ClusterConfigs for eksctl, cluster roles for AWS-Lambda and cluster-admin.
            * Wrote Dolphin deployment YML, set-up of HPA(Pod Scaling, Same Node) and Cluster Autoscaler(Pod Scaling across Nodes). 
