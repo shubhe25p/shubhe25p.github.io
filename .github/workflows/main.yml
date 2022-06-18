@@ -1,8 +1,8 @@
-name: Issue label
+name: Issue label main.yml
 on:
   issues:
     types: 
-      - created
+      - opened
 
 jobs:
   label_issue:
