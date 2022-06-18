@@ -19,6 +19,9 @@ jobs:
         run: |
           echo $ISSUE_TITLE
           echo $ISSUE_BODY
-          ls -la
           cd _pages
-          cat $ISSUE_TITLE.md
+          echo " * $ISSUE_BODY" >> $ISSUE_TITLE.md
+          gh issue edit $ISSUE_URL --add-label "deployed"
+          git add $ISSUE_TITLE.md
+          git commit -m "Automated commit"
+          git push origin/dev
