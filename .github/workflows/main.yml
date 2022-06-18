@@ -11,6 +11,14 @@ jobs:
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
-          echo "${{ github.event.issue.title }}"
-          gh issue edit $ISSUE_URL --add-label "bug"
+          echo $ISSUE_TITLE
+          echo $ISSUE_BODY
+          cd _pages
+          echo " * $ISSUE_BODY" >> $ISSUE_TITLE.md
+          gh issue edit $ISSUE_URL --add-label "deployed"
+          git add $ISSUE_TITLE.md
+          git commit -m "Automated commit"
+          git push origin/dev
