@@ -4,22 +4,24 @@ main:
     url: "/experience/"
     
   - title: "Publications"
-    url: /publications/
-
-  - title: "Talks"
-    url: /talks/    
+    url: /publications/   
 
   - title: "Teaching"
     url: /teaching/    
-    
+  
+  - title: "Talks"
+    url: /talks/ 
+
   # - title: "Portfolio"
   #   url: /portfolio/
         
-  - title: "Blog Posts"
-    url: /year-archive/
+  # - title: "Blog Posts"
+  #   url: /year-archive/
     
   # - title: "CV"
   #   url: /cv/
+  - title: "BookShelf"
+    url: /bookshelf/
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
