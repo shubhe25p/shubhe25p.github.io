@@ -1,0 +1,30 @@
+name: From Issue get title and body then deploy
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  label_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        
+      - env:
+          GITHUB_TOKEN: ${{ secrets.COMMIT_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          echo $ISSUE_TITLE
+          echo $ISSUE_BODY
+          cd _pages
+          echo " * $ISSUE_BODY" >> $ISSUE_TITLE.md
+          gh issue edit $ISSUE_URL --add-label "deployed"
+          git config --global user.name "issue-bot"
+          git config --global user.email "issue-bot@gmail.com"
+          git remote set-url origin https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
+          git add $ISSUE_TITLE.md
+          git commit -m "Automated commit By Issue bot"
+          git push
