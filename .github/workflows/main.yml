@@ -27,4 +27,4 @@ jobs:
           git remote set-url origin https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
           git add $ISSUE_TITLE.md
           git commit -m "Automated commit By issue bot"
-          git push origin/dev
+          git push
