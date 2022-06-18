@@ -22,6 +22,9 @@ jobs:
           cd _pages
           echo " * $ISSUE_BODY" >> $ISSUE_TITLE.md
           gh issue edit $ISSUE_URL --add-label "deployed"
+          git config --global user.name "issueBot"
+          git config --global user.email "issueBot@gmail.com"
+          git remote set-url origin https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
           git add $ISSUE_TITLE.md
-          git commit -m "Automated commit"
+          git commit -m "Automated commit By issue bot"
           git push origin/dev
