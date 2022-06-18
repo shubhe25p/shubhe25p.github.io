@@ -12,5 +12,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
         run: |
-          echo "${{ github.event.issue }}"
+          echo "${{ github.event.issue.title }}"
           gh issue edit $ISSUE_URL --add-label "bug"
