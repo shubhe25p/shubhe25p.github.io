@@ -8,6 +8,9 @@ jobs:
   label_issue:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
@@ -17,3 +20,5 @@ jobs:
           echo $ISSUE_TITLE
           echo $ISSUE_BODY
           ls -la
+          cd _pages
+          cat $ISSUE_TITLE.md
