@@ -28,3 +28,4 @@ jobs:
           git add $ISSUE_TITLE.md
           git commit -m "Automated commit By Issue bot"
           git push
+          gh issue close $ISSUE_URL
