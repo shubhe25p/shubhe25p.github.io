@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 * **Bharat Tech Labs, India**
-  * Position: Full Stack Machine Learning Engineer
+  * Position: Full Stack Engineer
   * Duration: September 2021 - July 2022
   * Work Description:
      * Project Lead for [Monitor](https://monitor.keytoz.com)
@@ -23,8 +23,6 @@ author_profile: true
           * Removed redundant code from all workers by building a base package. This package follows the [Factory Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) for its advantages of extensibility. 
 
           * Deployed Cassandra Multi-region cluster for high frequency of write requests which Postgres could not handle during a request spike. Additionally helped with setting up Stargate, a GraphQL API gateway for CassandraDB.
-
-          * Trained a Hidden Markov model to detect a spike in the number of jobs entering this system so it would be handled responsibily by Horizontal Pod Autoscaler(HPA). Detected spikes with an accuracy of 92.65%.
       
       * Successfuly upgraded a production Kubernetes cluster of [Dolphin](https://dolphin.evs7.com/) with minimal downtime. 
 
