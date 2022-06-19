@@ -8,6 +8,8 @@ tags:
   - Chaos theory
 ---
 
+My weekend exploration
+
 ### CloudFlare 
 
 Read a CloudFlare blog about the recent internet outage in Kherson, Ukraine. 
