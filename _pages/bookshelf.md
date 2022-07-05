@@ -27,8 +27,5 @@ My bookshelf is a work in progress. I tend to read many books in parallel, but o
 
  * Breath - James Nestor
 
- * **Infinite Powers** - Steven Strogatz
-
  * Art of War - Sun Tzu
  
- * **Siddhartha** - Hermann Hesse

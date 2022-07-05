@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 * **Bharat Tech Labs, India**
-  * Position: Full Stack Engineer
+  * Position: Full Stack Machine Learning Engineer
   * Duration: September 2021 - July 2022
   * Work Description:
      * Project Lead for [Monitor](https://monitor.keytoz.com)
