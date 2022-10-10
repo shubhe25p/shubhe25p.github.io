@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 * **Bharat Tech Labs, India**
-  * Position: Full Stack Machine Learning Engineer
+  * Position: Full Stack Engineer
   * Duration: September 2021 - July 2022
   * Work Description:
      * Project Lead for [Monitor](https://monitor.keytoz.com)
@@ -31,7 +31,7 @@ author_profile: true
            * Created Network Load Balancer(NLB), managed Node Groups and modified CI/CD pipeline for this new setup.
            * Utilized ConfigMaps and Persistent Storage for Prometheus to collect cluster-wide metrics. BlackBox Exporters were used to probe internal API endpoints. Prometheus was configured to automatically discover new pods through its service discovery functionality.
 
-  * Skills acquired: Kubernetes, Message Queues, Redis, Cassandra, VueJS, TypeScript, and GraphQL.
+  * Skills acquired: Kubernetes, Message Queues, Redis, Cassandra, VueJS, TypeScript, PostgreSQL and GraphQL.
   * Links: [Website](https://bharattechlabs.com/)
   
 * **Omni Automation, India**
